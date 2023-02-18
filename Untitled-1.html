@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+	<title>para meu amorzinho</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="login-container">
+		<h1>Fazer Login</h1>
+		<form>
+			<label for="username">Nome:</label>
+			<input type="text" id="username" name="username" required>
+
+			<label for="password">Senha:</label>
+			<input type="password" id="password" name="password" required>
+
+			<button type="submit" id="login-button">Login</button>
+		</form>
+
+		<button id="ready-button" disabled>Pronto?</button>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+<style type="text/css">
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-image: url('https://i.gifer.com/3AE8.gif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.login-container {
+  max-width: 400px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 2rem;
+  color: #fc7878;
+  text-transform: uppercase;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+}
+
+input {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #f70505;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+button:hover {
+  background-color: #f06ba9;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: default;
+}
+
+#ready-button {
+  background-color: #f3b2e8;
+  margin-top: 20px;
+  transition: all 0.2s;
+}
+
+#ready-button:hover {
+  background-color: #ebace0;
+}
+
+/* CSS para layout responsivo */
+@media only screen and (max-width: 768px) {
+	.login-container {
+		max-width: 90%;
+
+</html>
